@@ -6,7 +6,11 @@ module.exports = {
   extends: [
     'standard-with-typescript',
     'plugin:react/recommended',
-    'next/core-web-vitals'
+    'next/core-web-vitals',
+    'prettier',
+    'eslint:recommended',
+    'plugin:react/recommended',
+    'plugin:@typescript-eslint/recommended'
   ],
   overrides: [
     {
