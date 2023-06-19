@@ -11,13 +11,14 @@ module.exports = {
         'eslint:recommended',
         'plugin:react/recommended',
         'plugin:@typescript-eslint/recommended',
+        'plugin:testing-library/react',
     ],
     overrides: [
         {
             env: {
                 node: true,
             },
-            files: ['.eslintrc.{js,cjs}'],
+            files: ['.eslintrc.{js,cjs}', '**/__tests__/**/*.[jt]s?(x)', '**/?(*.)+(spec|test).[jt]s?(x)'],
             parserOptions: {
                 sourceType: 'script',
             },
